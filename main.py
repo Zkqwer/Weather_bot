@@ -112,7 +112,7 @@ async def text(message: types.Message):
             weather_forecast = await owm_data.city_weather(message.text)
             await message.answer(weather_forecast, parse_mode="html")
 
-    elif message.text == 'Погода на неделю':
+    elif message.text == 'Погода на 4 дня':
         await message.answer(text='Выбери действие, чтобы продолжить', reply_markup=keyboards.kb_city_definition)
         await database.update_user_step(message.chat.id, step='weather for several days')
 
