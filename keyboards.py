@@ -15,7 +15,7 @@ kb_start_keyboard.add(btn_menu)
 # Кнопки для меню
 kb_menu = ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
 btn_weather_now = KeyboardButton(text="Погода сейчас")
-btn_weather_week = KeyboardButton(text="Погода на неделю")
+btn_weather_week = KeyboardButton(text="Погода на 4 дня")
 kb_menu.add(btn_weather_now, btn_weather_week, btn_settings)
 
 # Кнопки для функции city_definition
